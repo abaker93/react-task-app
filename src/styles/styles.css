@@ -13,7 +13,6 @@ header {
     border-top: 10px solid #482880;
     padding: 20px;
     margin-bottom: 50px;
-    /* box-shadow: 0 0 20px 0 rgba(0,0,0,0.7); */
 }
 
 header h1 {
@@ -47,10 +46,19 @@ button {
     font-weight: 500;
     text-transform: uppercase;
     border: none;
-    background: #AB003C;
     color: #FFFFFF;
     padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button {
+    background: #AB003C;
     border-radius: 0 4px 4px 0;
+}
+
+li button {
+    background: #FFA024;
 }
 
 ul li {
@@ -58,5 +66,9 @@ ul li {
     padding: 20px;
     max-width: 600px;
     margin: 0 auto 20px;
-    box-shadow: 5px 5px 0 0 #FFA733;
+    box-shadow: 5px 5px 0 0 #FFA024;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
 }

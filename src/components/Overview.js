@@ -7,7 +7,16 @@ const Overview = props => {
 	return (
 		<ul>
 			{tasks.map(task => {
-				return <li key={uniqid()}>{task}</li>;
+				return(
+					<li key={uniqid()}>
+						{task}
+						<button
+							type="button"
+						>
+							Edit
+						</button>
+					</li>
+				);
 			})}
 		</ul>
 	)
